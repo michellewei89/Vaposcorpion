@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ExternalAccessory
 
 class connectViewController: UIViewController {
 
