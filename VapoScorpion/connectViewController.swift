@@ -54,9 +54,6 @@ class connectViewController: UIViewController {
         let complete : EABluetoothAccessoryPickerCompletion? = nil
         EAAccessoryManager.shared().showBluetoothAccessoryPicker(withNameFilter: nil, completion: complete)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(accessoryConnected), name: EAAccessoryDidConnectNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(accessoryDisconnected), name: EAAccessoryDidDisconnectNotification, object: nil)
-        EAAccessoryManager.sharedAccessoryManager().registerForLocalNotifications()
         
     }
 
