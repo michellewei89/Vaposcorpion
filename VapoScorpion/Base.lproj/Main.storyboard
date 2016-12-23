@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="er7-HP-gvV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="er7-HP-gvV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Settings-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VapoScorpion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="settingsViewController" customModule="VapoScorpion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -44,7 +44,7 @@
         <!--Control-->
         <scene sceneID="Edf-Oy-lV6">
             <objects>
-                <viewController id="YoX-ML-T34" sceneMemberID="viewController">
+                <viewController id="YoX-ML-T34" customClass="controlViewController" customModule="VapoScorpion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CXA-68-UVn"/>
                         <viewControllerLayoutGuide type="bottom" id="T62-cZ-Me3"/>
@@ -73,7 +73,7 @@
         <!--Connect-->
         <scene sceneID="tR2-FP-eh0">
             <objects>
-                <viewController id="IyF-1G-UVs" sceneMemberID="viewController">
+                <viewController id="IyF-1G-UVs" customClass="connectViewController" customModule="VapoScorpion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mdk-vW-3mk"/>
                         <viewControllerLayoutGuide type="bottom" id="MGP-r9-ZtX"/>
@@ -82,26 +82,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbb-zA-u3T">
-                                <rect key="frame" x="164.5" y="302" width="45" height="62"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
-                                <state key="normal" title="Lol">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD5-DE-kmi">
+                                <rect key="frame" x="40" y="410" width="102" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="backButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="gEv-XW-ygG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBu-wO-VRh">
+                                <rect key="frame" x="40" y="480" width="102" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="OTD-ao-tG3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-T2-AcV">
+                                <rect key="frame" x="201" y="551" width="174" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Connect"/>
+                                <connections>
+                                    <action selector="ConnectButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="xve-JK-9Sc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrd-bk-1VP">
+                                <rect key="frame" x="40" y="336" width="102" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Forward">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="forwardButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="ns0-OG-guH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87115323604060912" green="0.87115323604060912" blue="0.87115323604060912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.70909825390000003" green="0.82662489210000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Mbb-zA-u3T" firstAttribute="centerY" secondItem="Cjr-Vg-d6L" secondAttribute="centerY" id="Zt8-mM-Cgy"/>
-                            <constraint firstItem="Mbb-zA-u3T" firstAttribute="centerX" secondItem="Cjr-Vg-d6L" secondAttribute="centerX" id="fKo-wU-ZzG"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Connect" id="eoB-l8-4H3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Q8-H9-70R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1702" y="-221"/>
+            <point key="canvasLocation" x="1381.5999999999999" y="-324.28785607196403"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eaa-wA-gfC">
@@ -120,7 +151,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MuQ-iv-c8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="425" y="433"/>
+            <point key="canvasLocation" x="177" y="190"/>
         </scene>
     </scenes>
 </document>
