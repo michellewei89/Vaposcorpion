@@ -29,7 +29,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.53941918013788315" blue="0.67266305604581533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.70909825390000003" green="0.82662489210000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eVs-Uc-sLX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k7k-9k-BhC"/>
                             <constraint firstItem="eVs-Uc-sLX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uP0-Jf-kRI"/>
@@ -40,35 +40,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1702" y="1187"/>
-        </scene>
-        <!--Control-->
-        <scene sceneID="Edf-Oy-lV6">
-            <objects>
-                <viewController id="YoX-ML-T34" customClass="controlViewController" customModule="VapoScorpion" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CXA-68-UVn"/>
-                        <viewControllerLayoutGuide type="bottom" id="T62-cZ-Me3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zhJ-HG-dPM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4n-q4-Nuj">
-                                <rect key="frame" x="129" y="309" width="117" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
-                                <state key="normal" title="Hehehe">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.70909825390000003" green="0.82662489210000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Control" id="1X5-Bo-M2Z"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zBK-0X-u0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1701.5999999999999" y="433.13343328335833"/>
         </scene>
         <!--Connect-->
         <scene sceneID="tR2-FP-eh0">
@@ -83,45 +54,78 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD5-DE-kmi">
-                                <rect key="frame" x="40" y="410" width="102" height="51"/>
+                                <rect key="frame" x="136" y="371" width="102" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
                                 <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99777290070000002" green="1" blue="0.98850945749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="backButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="gEv-XW-ygG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBu-wO-VRh">
-                                <rect key="frame" x="40" y="480" width="102" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrd-bk-1VP">
+                                <rect key="frame" x="136" y="201" width="102" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                                <state key="normal" title="Forward">
+                                    <color key="titleColor" red="0.99777290070000002" green="1" blue="0.98850945749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="forwardButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="ns0-OG-guH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-T2-AcV">
+                                <rect key="frame" x="96" y="489" width="174" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="34"/>
+                                <state key="normal" title="Connect">
+                                    <color key="titleColor" red="0.99777290072726954" green="1" blue="0.98850945751496577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ConnectButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="xve-JK-9Sc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMb-vP-oH5">
+                                <rect key="frame" x="20" y="286" width="102" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                                <state key="normal" title="Left">
+                                    <color key="titleColor" red="0.99777290070000002" green="1" blue="0.98850945749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="LeftButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="p2S-Ex-zTZ"/>
+                                    <action selector="forwardButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="q1l-n0-MME"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSJ-0m-5se">
+                                <rect key="frame" x="254" y="286" width="102" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                                <state key="normal" title="Right">
+                                    <color key="titleColor" red="0.99777290070000002" green="1" blue="0.98850945749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="forwardButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="lTJ-bI-4kx"/>
+                                    <action selector="rightButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="Ufz-uH-Uxq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBu-wO-VRh">
+                                <rect key="frame" x="144" y="268" width="87" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.32341431419353039" blue="0.32963140010231151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                                <color key="tintColor" red="0.99777290070000002" green="1" blue="0.98850945749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Stop">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="stopButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="OTD-ao-tG3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-T2-AcV">
-                                <rect key="frame" x="201" y="551" width="174" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Connect"/>
-                                <connections>
-                                    <action selector="ConnectButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="xve-JK-9Sc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrd-bk-1VP">
-                                <rect key="frame" x="40" y="336" width="102" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Forward">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="forwardButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="ns0-OG-guH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -145,7 +149,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="IyF-1G-UVs" kind="relationship" relationship="viewControllers" id="FYC-nJ-HtL"/>
-                        <segue destination="YoX-ML-T34" kind="relationship" relationship="viewControllers" id="BtU-FH-jUh"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="wEw-sB-4KL"/>
                     </connections>
                 </tabBarController>

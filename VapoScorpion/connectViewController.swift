@@ -30,12 +30,40 @@ class connectViewController: UIViewController {
         if (brick == nil) {
             return
         }
-        let command : Ev3DirectCommand = Ev3DirectCommand(brick : brick!)
-        command.playTone(10, frequency: 500, duration: 2000)
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "forward")
     }
     @IBAction func backButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "back")
+   }
+    
+    @IBAction func LeftButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "left")
+
+    }
+    @IBAction func rightButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "right")
+
     }
     @IBAction func stopButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "stop")
+
     }
     
     func getEv3Accessory() -> EAAccessory? {
@@ -103,7 +131,4 @@ class connectViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-
