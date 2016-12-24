@@ -65,7 +65,57 @@ class connectViewController: UIViewController {
         command.writeMailbox("control", value: "stop")
 
     }
+    @IBAction func sforwardButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "sforward")
+        
+    }
+
+    @IBAction func sbackbutton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "sback")
+
+    }
     
+    @IBAction func sleftButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "sleft")
+
+    }
+    
+    @IBAction func srightButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "sright")
+        
+    }
+    
+    @IBAction func liftButton(_ sender: Any) {
+        
+    }
+    
+    @IBAction func sLiftButton(_ sender: Any) {
+        
+    }
+    
+    @IBAction func putdownButton(_ sender: Any) {
+        
+    }
+    
+    @IBAction func sputdownButton(_ sender: Any) {
+    
+    }
     func getEv3Accessory() -> EAAccessory? {
         let man = EAAccessoryManager.shared()
         let connected = man.connectedAccessories
