@@ -133,10 +133,10 @@ open class Ev3Command {
         buffer?.appendUInt8(0x00)
         addMessageTitle(s)
     }
-    func addMessageNumeric(_ value: UInt32) {
+    func addMessageNumeric(_ value: Float32) {
         let len : UInt16 = 4
         buffer!.appendUInt16LE(len)
-        buffer!.appendUInt32LE(value)
+        buffer!.appendUInt32LE(value.bitPattern)
     }
     func addMessageLogic(_ value: Bool) {
         let len : UInt16 = 1
@@ -144,7 +144,7 @@ open class Ev3Command {
         let v : UInt8 = value ? 1 : 0
         buffer!.appendUInt8(v)
     }
-    open func writeMailbox(_ title: String, value: UInt32) {
+    open func writeMailbox(_ title: String, value: Float32) {
         addSystemOpcode(SystemOpcode.writeMailbox)
         addMessageTitle(title)
         addMessageNumeric(value)

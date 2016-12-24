@@ -164,6 +164,9 @@ class connectViewController: UIViewController {
     
     private func connect(accessory: EAAccessory){
         if connection != nil && !(connection!.isClosed) {
+            let alert = UIAlertController(title: "VapoScorpion", message: "EV3 connected!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         connection = Ev3Connection(accessory: accessory)
@@ -184,6 +187,7 @@ class connectViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(accessoryConnected), name: NSNotification.Name.EAAccessoryDidConnect, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(accessoryDisconnected), name: NSNotification.Name.EAAccessoryDidDisconnect, object: nil)
         EAAccessoryManager.shared().registerForLocalNotifications()
+        ConnectButton(self)
     }
 
     override func didReceiveMemoryWarning() {

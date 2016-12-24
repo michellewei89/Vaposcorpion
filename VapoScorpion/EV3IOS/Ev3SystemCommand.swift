@@ -17,7 +17,7 @@ class Ev3SystemCommand  {
         self.brick = brick
     }
     /********* Michelle ***********/
-    open func writeMailbox(_ title: String, value: UInt32) {
+    open func writeMailbox(_ title: String, value: Float32) {
         let c = Ev3Command(commandType: .systemNoReply)
         c.writeMailbox(title, value: value)
         brick.sendCommand(c)
