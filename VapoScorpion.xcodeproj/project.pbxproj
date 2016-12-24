@@ -16,21 +16,21 @@
 		842A54401E0B59FA00E906D5 /* VapoScorpionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A543F1E0B59FA00E906D5 /* VapoScorpionUITests.swift */; };
 		842A544E1E0B5E0A00E906D5 /* controlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A544D1E0B5E0A00E906D5 /* controlViewController.swift */; };
 		842A54501E0B5E3C00E906D5 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A544F1E0B5E3C00E906D5 /* settingsViewController.swift */; };
-		F9C01F8A1E0BB7E500093FFE /* Ev3DirectCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F7B1E0BB7E500093FFE /* Ev3DirectCommand.swift */; };
-		F9C01F8B1E0BB7E500093FFE /* Ev3ResponseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F7C1E0BB7E500093FFE /* Ev3ResponseManager.swift */; };
-		F9C01F8C1E0BB7E500093FFE /* ByteTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F7D1E0BB7E500093FFE /* ByteTools.swift */; };
-		F9C01F8D1E0BB7E500093FFE /* BrickButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F7E1E0BB7E500093FFE /* BrickButtons.swift */; };
-		F9C01F8E1E0BB7E500093FFE /* Ev3Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F7F1E0BB7E500093FFE /* Ev3Brick.swift */; };
-		F9C01F8F1E0BB7E500093FFE /* Ev3Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F801E0BB7E500093FFE /* Ev3Command.swift */; };
-		F9C01F901E0BB7E500093FFE /* Ev3Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F811E0BB7E500093FFE /* Ev3Connection.swift */; };
-		F9C01F911E0BB7E500093FFE /* Ev3Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F821E0BB7E500093FFE /* Ev3Enums.swift */; };
-		F9C01F921E0BB7E500093FFE /* Ev3Port.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F831E0BB7E500093FFE /* Ev3Port.swift */; };
-		F9C01F931E0BB7E500093FFE /* Ev3ReportDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F841E0BB7E500093FFE /* Ev3ReportDelegate.swift */; };
-		F9C01F941E0BB7E500093FFE /* Ev3Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F851E0BB7E500093FFE /* Ev3Response.swift */; };
-		F9C01F951E0BB7E500093FFE /* Ev3SimpleSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F861E0BB7E500093FFE /* Ev3SimpleSounds.swift */; };
-		F9C01F961E0BB7E500093FFE /* Ev3BrickChangedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F871E0BB7E500093FFE /* Ev3BrickChangedDelegate.swift */; };
-		F9C01F971E0BB7E500093FFE /* Ev3Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F881E0BB7E500093FFE /* Ev3Constants.swift */; };
-		F9C01F981E0BB7E500093FFE /* Ev3SystemCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01F891E0BB7E500093FFE /* Ev3SystemCommand.swift */; };
+		F9C01FC81E0E201C00093FFE /* Ev3SystemCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FB91E0E201C00093FFE /* Ev3SystemCommand.swift */; };
+		F9C01FC91E0E201C00093FFE /* Ev3Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FBA1E0E201C00093FFE /* Ev3Command.swift */; };
+		F9C01FCA1E0E201C00093FFE /* Ev3Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FBB1E0E201C00093FFE /* Ev3Enums.swift */; };
+		F9C01FCB1E0E201C00093FFE /* Ev3DirectCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FBC1E0E201C00093FFE /* Ev3DirectCommand.swift */; };
+		F9C01FCC1E0E201C00093FFE /* Ev3ResponseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FBD1E0E201C00093FFE /* Ev3ResponseManager.swift */; };
+		F9C01FCD1E0E201C00093FFE /* ByteTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FBE1E0E201C00093FFE /* ByteTools.swift */; };
+		F9C01FCE1E0E201C00093FFE /* BrickButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FBF1E0E201C00093FFE /* BrickButtons.swift */; };
+		F9C01FCF1E0E201C00093FFE /* Ev3Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FC01E0E201C00093FFE /* Ev3Brick.swift */; };
+		F9C01FD01E0E201C00093FFE /* Ev3Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FC11E0E201C00093FFE /* Ev3Connection.swift */; };
+		F9C01FD11E0E201C00093FFE /* Ev3Port.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FC21E0E201C00093FFE /* Ev3Port.swift */; };
+		F9C01FD21E0E201C00093FFE /* Ev3ReportDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FC31E0E201C00093FFE /* Ev3ReportDelegate.swift */; };
+		F9C01FD31E0E201C00093FFE /* Ev3Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FC41E0E201C00093FFE /* Ev3Response.swift */; };
+		F9C01FD41E0E201C00093FFE /* Ev3SimpleSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FC51E0E201C00093FFE /* Ev3SimpleSounds.swift */; };
+		F9C01FD51E0E201C00093FFE /* Ev3BrickChangedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FC61E0E201C00093FFE /* Ev3BrickChangedDelegate.swift */; };
+		F9C01FD61E0E201C00093FFE /* Ev3Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FC71E0E201C00093FFE /* Ev3Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,21 +66,21 @@
 		842A54411E0B59FA00E906D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842A544D1E0B5E0A00E906D5 /* controlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = controlViewController.swift; sourceTree = "<group>"; };
 		842A544F1E0B5E3C00E906D5 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
-		F9C01F7B1E0BB7E500093FFE /* Ev3DirectCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3DirectCommand.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3DirectCommand.swift"; sourceTree = "<group>"; };
-		F9C01F7C1E0BB7E500093FFE /* Ev3ResponseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3ResponseManager.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3ResponseManager.swift"; sourceTree = "<group>"; };
-		F9C01F7D1E0BB7E500093FFE /* ByteTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ByteTools.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/ByteTools.swift"; sourceTree = "<group>"; };
-		F9C01F7E1E0BB7E500093FFE /* BrickButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrickButtons.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/BrickButtons.swift"; sourceTree = "<group>"; };
-		F9C01F7F1E0BB7E500093FFE /* Ev3Brick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Brick.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3Brick.swift"; sourceTree = "<group>"; };
-		F9C01F801E0BB7E500093FFE /* Ev3Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Command.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3Command.swift"; sourceTree = "<group>"; };
-		F9C01F811E0BB7E500093FFE /* Ev3Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Connection.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3Connection.swift"; sourceTree = "<group>"; };
-		F9C01F821E0BB7E500093FFE /* Ev3Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Enums.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3Enums.swift"; sourceTree = "<group>"; };
-		F9C01F831E0BB7E500093FFE /* Ev3Port.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Port.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3Port.swift"; sourceTree = "<group>"; };
-		F9C01F841E0BB7E500093FFE /* Ev3ReportDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3ReportDelegate.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3ReportDelegate.swift"; sourceTree = "<group>"; };
-		F9C01F851E0BB7E500093FFE /* Ev3Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Response.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3Response.swift"; sourceTree = "<group>"; };
-		F9C01F861E0BB7E500093FFE /* Ev3SimpleSounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3SimpleSounds.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3SimpleSounds.swift"; sourceTree = "<group>"; };
-		F9C01F871E0BB7E500093FFE /* Ev3BrickChangedDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3BrickChangedDelegate.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3BrickChangedDelegate.swift"; sourceTree = "<group>"; };
-		F9C01F881E0BB7E500093FFE /* Ev3Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Constants.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3Constants.swift"; sourceTree = "<group>"; };
-		F9C01F891E0BB7E500093FFE /* Ev3SystemCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3SystemCommand.swift; path = "../../../Downloads/ev3ios-master/EV3IOS/Ev3SystemCommand.swift"; sourceTree = "<group>"; };
+		F9C01FB91E0E201C00093FFE /* Ev3SystemCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3SystemCommand.swift; path = VapoScorpion/EV3IOS/Ev3SystemCommand.swift; sourceTree = "<group>"; };
+		F9C01FBA1E0E201C00093FFE /* Ev3Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Command.swift; path = VapoScorpion/EV3IOS/Ev3Command.swift; sourceTree = "<group>"; };
+		F9C01FBB1E0E201C00093FFE /* Ev3Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Enums.swift; path = VapoScorpion/EV3IOS/Ev3Enums.swift; sourceTree = "<group>"; };
+		F9C01FBC1E0E201C00093FFE /* Ev3DirectCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3DirectCommand.swift; path = VapoScorpion/EV3IOS/Ev3DirectCommand.swift; sourceTree = "<group>"; };
+		F9C01FBD1E0E201C00093FFE /* Ev3ResponseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3ResponseManager.swift; path = VapoScorpion/EV3IOS/Ev3ResponseManager.swift; sourceTree = "<group>"; };
+		F9C01FBE1E0E201C00093FFE /* ByteTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ByteTools.swift; path = VapoScorpion/EV3IOS/ByteTools.swift; sourceTree = "<group>"; };
+		F9C01FBF1E0E201C00093FFE /* BrickButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrickButtons.swift; path = VapoScorpion/EV3IOS/BrickButtons.swift; sourceTree = "<group>"; };
+		F9C01FC01E0E201C00093FFE /* Ev3Brick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Brick.swift; path = VapoScorpion/EV3IOS/Ev3Brick.swift; sourceTree = "<group>"; };
+		F9C01FC11E0E201C00093FFE /* Ev3Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Connection.swift; path = VapoScorpion/EV3IOS/Ev3Connection.swift; sourceTree = "<group>"; };
+		F9C01FC21E0E201C00093FFE /* Ev3Port.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Port.swift; path = VapoScorpion/EV3IOS/Ev3Port.swift; sourceTree = "<group>"; };
+		F9C01FC31E0E201C00093FFE /* Ev3ReportDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3ReportDelegate.swift; path = VapoScorpion/EV3IOS/Ev3ReportDelegate.swift; sourceTree = "<group>"; };
+		F9C01FC41E0E201C00093FFE /* Ev3Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Response.swift; path = VapoScorpion/EV3IOS/Ev3Response.swift; sourceTree = "<group>"; };
+		F9C01FC51E0E201C00093FFE /* Ev3SimpleSounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3SimpleSounds.swift; path = VapoScorpion/EV3IOS/Ev3SimpleSounds.swift; sourceTree = "<group>"; };
+		F9C01FC61E0E201C00093FFE /* Ev3BrickChangedDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3BrickChangedDelegate.swift; path = VapoScorpion/EV3IOS/Ev3BrickChangedDelegate.swift; sourceTree = "<group>"; };
+		F9C01FC71E0E201C00093FFE /* Ev3Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Constants.swift; path = VapoScorpion/EV3IOS/Ev3Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +111,21 @@
 		842A54131E0B59FA00E906D5 = {
 			isa = PBXGroup;
 			children = (
+				F9C01FB91E0E201C00093FFE /* Ev3SystemCommand.swift */,
+				F9C01FBA1E0E201C00093FFE /* Ev3Command.swift */,
+				F9C01FBB1E0E201C00093FFE /* Ev3Enums.swift */,
+				F9C01FBC1E0E201C00093FFE /* Ev3DirectCommand.swift */,
+				F9C01FBD1E0E201C00093FFE /* Ev3ResponseManager.swift */,
+				F9C01FBE1E0E201C00093FFE /* ByteTools.swift */,
+				F9C01FBF1E0E201C00093FFE /* BrickButtons.swift */,
+				F9C01FC01E0E201C00093FFE /* Ev3Brick.swift */,
+				F9C01FC11E0E201C00093FFE /* Ev3Connection.swift */,
+				F9C01FC21E0E201C00093FFE /* Ev3Port.swift */,
+				F9C01FC31E0E201C00093FFE /* Ev3ReportDelegate.swift */,
+				F9C01FC41E0E201C00093FFE /* Ev3Response.swift */,
+				F9C01FC51E0E201C00093FFE /* Ev3SimpleSounds.swift */,
+				F9C01FC61E0E201C00093FFE /* Ev3BrickChangedDelegate.swift */,
+				F9C01FC71E0E201C00093FFE /* Ev3Constants.swift */,
 				842A541E1E0B59FA00E906D5 /* VapoScorpion */,
 				842A54331E0B59FA00E906D5 /* VapoScorpionTests */,
 				842A543E1E0B59FA00E906D5 /* VapoScorpionUITests */,
@@ -131,21 +146,6 @@
 		842A541E1E0B59FA00E906D5 /* VapoScorpion */ = {
 			isa = PBXGroup;
 			children = (
-				F9C01F7B1E0BB7E500093FFE /* Ev3DirectCommand.swift */,
-				F9C01F7C1E0BB7E500093FFE /* Ev3ResponseManager.swift */,
-				F9C01F7D1E0BB7E500093FFE /* ByteTools.swift */,
-				F9C01F7E1E0BB7E500093FFE /* BrickButtons.swift */,
-				F9C01F7F1E0BB7E500093FFE /* Ev3Brick.swift */,
-				F9C01F801E0BB7E500093FFE /* Ev3Command.swift */,
-				F9C01F811E0BB7E500093FFE /* Ev3Connection.swift */,
-				F9C01F821E0BB7E500093FFE /* Ev3Enums.swift */,
-				F9C01F831E0BB7E500093FFE /* Ev3Port.swift */,
-				F9C01F841E0BB7E500093FFE /* Ev3ReportDelegate.swift */,
-				F9C01F851E0BB7E500093FFE /* Ev3Response.swift */,
-				F9C01F861E0BB7E500093FFE /* Ev3SimpleSounds.swift */,
-				F9C01F871E0BB7E500093FFE /* Ev3BrickChangedDelegate.swift */,
-				F9C01F881E0BB7E500093FFE /* Ev3Constants.swift */,
-				F9C01F891E0BB7E500093FFE /* Ev3SystemCommand.swift */,
 				842A541F1E0B59FA00E906D5 /* AppDelegate.swift */,
 				842A54211E0B59FA00E906D5 /* connectViewController.swift */,
 				842A544D1E0B5E0A00E906D5 /* controlViewController.swift */,
@@ -316,25 +316,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C01F971E0BB7E500093FFE /* Ev3Constants.swift in Sources */,
-				F9C01F961E0BB7E500093FFE /* Ev3BrickChangedDelegate.swift in Sources */,
+				F9C01FD61E0E201C00093FFE /* Ev3Constants.swift in Sources */,
+				F9C01FD51E0E201C00093FFE /* Ev3BrickChangedDelegate.swift in Sources */,
+				F9C01FCA1E0E201C00093FFE /* Ev3Enums.swift in Sources */,
+				F9C01FD11E0E201C00093FFE /* Ev3Port.swift in Sources */,
+				F9C01FCB1E0E201C00093FFE /* Ev3DirectCommand.swift in Sources */,
+				F9C01FC91E0E201C00093FFE /* Ev3Command.swift in Sources */,
+				F9C01FD21E0E201C00093FFE /* Ev3ReportDelegate.swift in Sources */,
+				F9C01FD41E0E201C00093FFE /* Ev3SimpleSounds.swift in Sources */,
 				842A544E1E0B5E0A00E906D5 /* controlViewController.swift in Sources */,
-				F9C01F921E0BB7E500093FFE /* Ev3Port.swift in Sources */,
-				F9C01F8A1E0BB7E500093FFE /* Ev3DirectCommand.swift in Sources */,
-				F9C01F8B1E0BB7E500093FFE /* Ev3ResponseManager.swift in Sources */,
-				F9C01F931E0BB7E500093FFE /* Ev3ReportDelegate.swift in Sources */,
-				F9C01F951E0BB7E500093FFE /* Ev3SimpleSounds.swift in Sources */,
 				842A54221E0B59FA00E906D5 /* connectViewController.swift in Sources */,
-				F9C01F901E0BB7E500093FFE /* Ev3Connection.swift in Sources */,
 				842A54201E0B59FA00E906D5 /* AppDelegate.swift in Sources */,
-				F9C01F941E0BB7E500093FFE /* Ev3Response.swift in Sources */,
-				F9C01F8E1E0BB7E500093FFE /* Ev3Brick.swift in Sources */,
+				F9C01FCF1E0E201C00093FFE /* Ev3Brick.swift in Sources */,
+				F9C01FD31E0E201C00093FFE /* Ev3Response.swift in Sources */,
 				842A54501E0B5E3C00E906D5 /* settingsViewController.swift in Sources */,
-				F9C01F911E0BB7E500093FFE /* Ev3Enums.swift in Sources */,
-				F9C01F8D1E0BB7E500093FFE /* BrickButtons.swift in Sources */,
-				F9C01F8F1E0BB7E500093FFE /* Ev3Command.swift in Sources */,
-				F9C01F8C1E0BB7E500093FFE /* ByteTools.swift in Sources */,
-				F9C01F981E0BB7E500093FFE /* Ev3SystemCommand.swift in Sources */,
+				F9C01FCE1E0E201C00093FFE /* BrickButtons.swift in Sources */,
+				F9C01FD01E0E201C00093FFE /* Ev3Connection.swift in Sources */,
+				F9C01FCD1E0E201C00093FFE /* ByteTools.swift in Sources */,
+				F9C01FC81E0E201C00093FFE /* Ev3SystemCommand.swift in Sources */,
+				F9C01FCC1E0E201C00093FFE /* Ev3ResponseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

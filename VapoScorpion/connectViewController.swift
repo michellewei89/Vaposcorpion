@@ -16,14 +16,14 @@ class connectViewController: UIViewController {
     var connectedEV3 : EAAccessory? = nil
 
     @IBAction func ConnectButton(_ sender: Any) {
-        let complete : EABluetoothAccessoryPickerCompletion? = nil
-        EAAccessoryManager.shared().showBluetoothAccessoryPicker(withNameFilter: nil, completion: complete)
         connectedEV3 = getEv3Accessory()
         if connectedEV3 != nil {
             connect(accessory: connectedEV3!)
             print("EV3 reconnected ")
         } else {
             print("EV3 not connected")
+            let complete : EABluetoothAccessoryPickerCompletion? = nil
+            EAAccessoryManager.shared().showBluetoothAccessoryPicker(withNameFilter: nil, completion: complete)
         }
     }
     @IBAction func forwardButton(_ sender: Any) {
