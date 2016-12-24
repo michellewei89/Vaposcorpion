@@ -125,6 +125,33 @@ class connectViewController: UIViewController {
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
         command.writeMailbox("control", value: "sputdown")
     }
+    
+    @IBAction func tailUpButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "tailup")
+    }
+   
+    
+    @IBAction func tailDownButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "taildown")
+    }
+    
+    @IBAction func liftStopButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "liftstop")
+
+    }
+    
     func getEv3Accessory() -> EAAccessory? {
         let man = EAAccessoryManager.shared()
         let connected = man.connectedAccessories
