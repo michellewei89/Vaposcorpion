@@ -87,6 +87,11 @@
                                 <state key="normal" title="Connect">
                                     <color key="titleColor" red="0.99777290072726954" green="1" blue="0.98850945751496577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="ConnectButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="xve-JK-9Sc"/>
                                 </connections>
@@ -127,6 +132,11 @@
                                 <state key="normal" title="Stop">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="stopButton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="OTD-ao-tG3"/>
                                 </connections>
@@ -179,6 +189,11 @@
                                     <color key="titleColor" red="0.99777290070000002" green="1" blue="0.98850945749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="sbackbutton:" destination="IyF-1G-UVs" eventType="touchUpInside" id="tTl-oB-Mr9"/>
                                 </connections>
