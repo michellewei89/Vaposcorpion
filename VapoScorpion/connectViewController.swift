@@ -152,6 +152,30 @@ class connectViewController: UIViewController {
 
     }
     
+    @IBAction func lForwardButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "lforward")
+    }
+    
+    @IBAction func rForwardButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "rforward")
+    }
+    
+    @IBAction func FinishButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "finish")
+    }
+    
     func getEv3Accessory() -> EAAccessory? {
         let man = EAAccessoryManager.shared()
         let connected = man.connectedAccessories
