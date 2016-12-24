@@ -47,7 +47,6 @@ class connectViewController: UIViewController {
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
         command.writeMailbox("control", value: "left")
-
     }
     @IBAction func rightButton(_ sender: Any) {
         if (brick == nil) {
@@ -55,7 +54,6 @@ class connectViewController: UIViewController {
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
         command.writeMailbox("control", value: "right")
-
     }
     @IBAction func stopButton(_ sender: Any) {
         if (brick == nil) {
@@ -63,7 +61,6 @@ class connectViewController: UIViewController {
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
         command.writeMailbox("control", value: "stop")
-
     }
     @IBAction func sforwardButton(_ sender: Any) {
         if (brick == nil) {
@@ -71,7 +68,6 @@ class connectViewController: UIViewController {
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
         command.writeMailbox("control", value: "sforward")
-        
     }
 
     @IBAction func sbackbutton(_ sender: Any) {
@@ -80,7 +76,6 @@ class connectViewController: UIViewController {
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
         command.writeMailbox("control", value: "sback")
-
     }
     
     @IBAction func sleftButton(_ sender: Any) {
@@ -89,7 +84,6 @@ class connectViewController: UIViewController {
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
         command.writeMailbox("control", value: "sleft")
-
     }
     
     @IBAction func srightButton(_ sender: Any) {
@@ -98,23 +92,38 @@ class connectViewController: UIViewController {
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
         command.writeMailbox("control", value: "sright")
-        
     }
     
     @IBAction func liftButton(_ sender: Any) {
-        
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "lift")
     }
     
     @IBAction func sLiftButton(_ sender: Any) {
-        
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "slift")
     }
     
     @IBAction func putdownButton(_ sender: Any) {
-        
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "putdown")
     }
     
     @IBAction func sputdownButton(_ sender: Any) {
-    
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "sputdown")
     }
     func getEv3Accessory() -> EAAccessory? {
         let man = EAAccessoryManager.shared()
