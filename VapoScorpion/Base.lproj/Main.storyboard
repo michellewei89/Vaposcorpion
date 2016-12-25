@@ -35,7 +35,7 @@
                             <constraint firstItem="eVs-Uc-sLX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uP0-Jf-kRI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" selectedImage="Gear.png" id="KUk-cf-a8V"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Gear.png" selectedImage="Gear.png" id="KUk-cf-a8V"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -416,7 +416,7 @@
                         <color key="backgroundColor" red="0.87115323604060912" green="0.87115323604060912" blue="0.87115323604060912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.70909825390000003" green="0.82662489210000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Control" selectedImage="Icon1.png" id="eoB-l8-4H3"/>
+                    <tabBarItem key="tabBarItem" title="Control" image="Icon1.png" selectedImage="Icon1.png" id="eoB-l8-4H3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Q8-H9-70R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
