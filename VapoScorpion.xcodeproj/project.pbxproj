@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		575FDED31E0F4A3C00AB05A2 /* Icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 575FDED21E0F4A3C00AB05A2 /* Icon1.png */; };
 		842A54201E0B59FA00E906D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A541F1E0B59FA00E906D5 /* AppDelegate.swift */; };
 		842A54221E0B59FA00E906D5 /* control1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A54211E0B59FA00E906D5 /* control1ViewController.swift */; };
 		842A54251E0B59FA00E906D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842A54231E0B59FA00E906D5 /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		842A54351E0B59FA00E906D5 /* VapoScorpionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A54341E0B59FA00E906D5 /* VapoScorpionTests.swift */; };
 		842A54401E0B59FA00E906D5 /* VapoScorpionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A543F1E0B59FA00E906D5 /* VapoScorpionUITests.swift */; };
 		842A54501E0B5E3C00E906D5 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A544F1E0B5E3C00E906D5 /* settingsViewController.swift */; };
-		849C81DE1E0F42D0007C6CBE /* Icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 849C81DD1E0F42D0007C6CBE /* Icon1.png */; };
 		849C81E01E0F4389007C6CBE /* Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 849C81DF1E0F4389007C6CBE /* Gear.png */; };
 		F9C01FC81E0E201C00093FFE /* Ev3SystemCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FB91E0E201C00093FFE /* Ev3SystemCommand.swift */; };
 		F9C01FC91E0E201C00093FFE /* Ev3Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FBA1E0E201C00093FFE /* Ev3Command.swift */; };
@@ -52,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		575FDED21E0F4A3C00AB05A2 /* Icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon1.png; path = ../../../Downloads/Icon1.png; sourceTree = "<group>"; };
 		842A541C1E0B59FA00E906D5 /* VapoScorpion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VapoScorpion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A541F1E0B59FA00E906D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842A54211E0B59FA00E906D5 /* control1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = control1ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		842A543F1E0B59FA00E906D5 /* VapoScorpionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VapoScorpionUITests.swift; sourceTree = "<group>"; };
 		842A54411E0B59FA00E906D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842A544F1E0B5E3C00E906D5 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
-		849C81DD1E0F42D0007C6CBE /* Icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon1.png; path = ../../../Documents/Icon1.png; sourceTree = "<group>"; };
 		849C81DF1E0F4389007C6CBE /* Gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gear.png; path = ../../../Downloads/Gear.png; sourceTree = "<group>"; };
 		F9C01FB91E0E201C00093FFE /* Ev3SystemCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3SystemCommand.swift; path = VapoScorpion/EV3IOS/Ev3SystemCommand.swift; sourceTree = "<group>"; };
 		F9C01FBA1E0E201C00093FFE /* Ev3Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Command.swift; path = VapoScorpion/EV3IOS/Ev3Command.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		842A541E1E0B59FA00E906D5 /* VapoScorpion */ = {
 			isa = PBXGroup;
 			children = (
-				849C81DD1E0F42D0007C6CBE /* Icon1.png */,
+				575FDED21E0F4A3C00AB05A2 /* Icon1.png */,
 				849C81DF1E0F4389007C6CBE /* Gear.png */,
 				842A541F1E0B59FA00E906D5 /* AppDelegate.swift */,
 				842A54211E0B59FA00E906D5 /* control1ViewController.swift */,
@@ -292,10 +292,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575FDED31E0F4A3C00AB05A2 /* Icon1.png in Resources */,
 				842A542A1E0B59FA00E906D5 /* LaunchScreen.storyboard in Resources */,
 				842A54271E0B59FA00E906D5 /* Assets.xcassets in Resources */,
 				849C81E01E0F4389007C6CBE /* Gear.png in Resources */,
-				849C81DE1E0F42D0007C6CBE /* Icon1.png in Resources */,
 				842A54251E0B59FA00E906D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
