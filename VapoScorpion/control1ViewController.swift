@@ -10,7 +10,7 @@ import UIKit
 import ExternalAccessory
 
 
-class connectViewController: UIViewController {
+class controlViewController: UIViewController {
     var connection: Ev3Connection? = nil
     var brick: Ev3Brick? = nil
     var connectedEV3 : EAAccessory? = nil
