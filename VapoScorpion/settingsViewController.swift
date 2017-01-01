@@ -19,21 +19,39 @@ class settingsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBOutlet weak var forwardLabel: UILabel!
+    @IBOutlet weak var liftLabel: UILabel!
+    @IBOutlet weak var backLabel: UILabel!
+    @IBOutlet weak var tailLabel: UILabel!
     
-    @IBAction func forwardSlider(_ sender: Any) {
+    
+    
+    
+    @IBAction func forwardSlider(_ sender: UISlider) {
+        var currentValue = Float(sender.value)
         
+        forwardLabel.text = "\(currentValue)"
     }
 
-    @IBAction func liftSlider(_ sender: Any) {
+    @IBAction func liftSlider(_ sender: UISlider) {
+        var yayValue = Float(sender.value)
         
+        liftLabel.text = "\(yayValue)"
+
     }
     
-    @IBAction func backSlider(_ sender: Any) {
+    @IBAction func backSlider(_ sender: UISlider) {
+        var lolValue = Float(sender.value)
         
+        backLabel.text = "\(lolValue)"
+
     }
     
-    @IBAction func tailSlider(_ sender: Any) {
+    @IBAction func tailSlider(_ sender: UISlider) {
+        var theValue = Float(sender.value)
         
+        tailLabel.text = "\(theValue)"
+
     }
 }
 
