@@ -28,27 +28,27 @@ class settingsViewController: UIViewController {
     
     
     @IBAction func forwardSlider(_ sender: UISlider) {
-        var currentValue = Float(sender.value)
+        let currentValue = Int(Float(sender.value)*100)
         
         forwardLabel.text = "\(currentValue)"
     }
 
     @IBAction func liftSlider(_ sender: UISlider) {
-        var yayValue = Float(sender.value)
+        let yayValue = Int(Float(sender.value)*100)
         
         liftLabel.text = "\(yayValue)"
 
     }
     
     @IBAction func backSlider(_ sender: UISlider) {
-        var lolValue = Float(sender.value)
+        let lolValue = Int(Float(sender.value)*100)
         
         backLabel.text = "\(lolValue)"
 
     }
     
     @IBAction func tailSlider(_ sender: UISlider) {
-        var theValue = Float(sender.value)
+        let theValue = Int(Float(sender.value)*100)
         
         tailLabel.text = "\(theValue)"
 
