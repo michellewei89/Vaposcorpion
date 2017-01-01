@@ -20,7 +20,20 @@ class settingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-}
+    @IBAction func forwardSlider(_ sender: Any) {
+        
+    }
 
+    @IBAction func liftSlider(_ sender: Any) {
+        
+    }
+    
+    @IBAction func backSlider(_ sender: Any) {
+        
+    }
+    
+    @IBAction func tailSlider(_ sender: Any) {
+        
+    }
+}
 
