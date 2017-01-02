@@ -17,6 +17,7 @@
 		842A54351E0B59FA00E906D5 /* VapoScorpionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A54341E0B59FA00E906D5 /* VapoScorpionTests.swift */; };
 		842A54401E0B59FA00E906D5 /* VapoScorpionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A543F1E0B59FA00E906D5 /* VapoScorpionUITests.swift */; };
 		842A54501E0B5E3C00E906D5 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A544F1E0B5E3C00E906D5 /* settingsViewController.swift */; };
+		F913CA0F1E1AB79D00FC0124 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913CA0E1E1AB79D00FC0124 /* constants.swift */; };
 		F9C01FC81E0E201C00093FFE /* Ev3SystemCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FB91E0E201C00093FFE /* Ev3SystemCommand.swift */; };
 		F9C01FC91E0E201C00093FFE /* Ev3Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FBA1E0E201C00093FFE /* Ev3Command.swift */; };
 		F9C01FCA1E0E201C00093FFE /* Ev3Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C01FBB1E0E201C00093FFE /* Ev3Enums.swift */; };
@@ -68,6 +69,7 @@
 		842A543F1E0B59FA00E906D5 /* VapoScorpionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VapoScorpionUITests.swift; sourceTree = "<group>"; };
 		842A54411E0B59FA00E906D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842A544F1E0B5E3C00E906D5 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		F913CA0E1E1AB79D00FC0124 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		F9C01FB91E0E201C00093FFE /* Ev3SystemCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3SystemCommand.swift; path = VapoScorpion/EV3IOS/Ev3SystemCommand.swift; sourceTree = "<group>"; };
 		F9C01FBA1E0E201C00093FFE /* Ev3Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Command.swift; path = VapoScorpion/EV3IOS/Ev3Command.swift; sourceTree = "<group>"; };
 		F9C01FBB1E0E201C00093FFE /* Ev3Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ev3Enums.swift; path = VapoScorpion/EV3IOS/Ev3Enums.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				842A54261E0B59FA00E906D5 /* Assets.xcassets */,
 				842A54281E0B59FA00E906D5 /* LaunchScreen.storyboard */,
 				842A542B1E0B59FA00E906D5 /* Info.plist */,
+				F913CA0E1E1AB79D00FC0124 /* constants.swift */,
 			);
 			path = VapoScorpion;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				F9C01FCD1E0E201C00093FFE /* ByteTools.swift in Sources */,
 				F9C01FC81E0E201C00093FFE /* Ev3SystemCommand.swift in Sources */,
 				F9C01FCC1E0E201C00093FFE /* Ev3ResponseManager.swift in Sources */,
+				F913CA0F1E1AB79D00FC0124 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

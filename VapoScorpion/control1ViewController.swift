@@ -218,11 +218,13 @@ class controlViewController: UIViewController {
             let alert = UIAlertController(title: "VapoScorpion", message: "EV3 connected!", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            setDefaultSpeed()
             return
         }
         connection = Ev3Connection(accessory: accessory)
         brick = Ev3Brick(connection: connection!)
         connection?.open()
+        setDefaultSpeed()
         print("EV3 connection successful")
     }
 
@@ -231,6 +233,16 @@ class controlViewController: UIViewController {
         connection = nil
         brick = nil
     }
+    
+    func setDefaultSpeed() {
+        //send default speed to EV3
+        if (brick != nil) {
+            let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+            command.writeMailbox("forward", value: defaultSpeed.forwardSpeed)
+            command.writeMailbox("back", value: defaultSpeed.backSpeed)
+        }
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

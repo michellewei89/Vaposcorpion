@@ -16,7 +16,7 @@ class settingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        setDefaultSpeed()
+        setSliderDefault()
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,10 +24,6 @@ class settingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        setDefaultSpeed()
-    }
     @IBOutlet weak var forwardLabel: UILabel!
     @IBOutlet weak var liftLabel: UILabel!
     @IBOutlet weak var backLabel: UILabel!
@@ -36,19 +32,10 @@ class settingsViewController: UIViewController {
     @IBOutlet weak var forwardUISlider: UISlider!
     @IBOutlet weak var backUISlider: UISlider!
     
-    func setDefaultSpeed() {
+    func setSliderDefault() {
         // set slider label texts
-        forwardLabel.text = "\(Int(100*forwardUISlider.value))"
-        backLabel.text = "\(Int(100*backUISlider.value))"
-        //send default speed to EV3
-        let barViewControllers = self.tabBarController?.viewControllers
-        controlVC = barViewControllers![0] as? controlViewController
-        brick = controlVC?.brick //get brick from control view
-        if (brick != nil) {
-            let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
-            command.writeMailbox("forward", value: 100*forwardUISlider.value)
-            command.writeMailbox("back", value: 100*backUISlider.value)
-        }
+        forwardLabel.text = "\(Int(defaultSpeed.forwardSpeed))"
+        backLabel.text = "\(Int(defaultSpeed.backSpeed))"
     }
     
     @IBAction func forwardSlider(_ sender: UISlider) {
