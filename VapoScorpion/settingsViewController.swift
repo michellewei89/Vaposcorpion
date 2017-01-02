@@ -7,43 +7,66 @@
 //
 
 import UIKit
+import ExternalAccessory
 
 class settingsViewController: UIViewController {
+    var brick: Ev3Brick? = nil
+    var controlVC : controlViewController? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        setSliderDefault()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBOutlet weak var forwardLabel: UILabel!
     @IBOutlet weak var liftLabel: UILabel!
     @IBOutlet weak var backLabel: UILabel!
     @IBOutlet weak var tailLabel: UILabel!
     
+    @IBOutlet weak var forwardUISlider: UISlider!
+    @IBOutlet weak var backUISlider: UISlider!
     
-    
+    func setSliderDefault() {
+        // set slider label texts
+        forwardLabel.text = "\(Int(defaultSpeed.forwardSpeed))"
+        backLabel.text = "\(Int(defaultSpeed.backSpeed))"
+    }
     
     @IBAction func forwardSlider(_ sender: UISlider) {
         let currentValue = Int(Float(sender.value)*100)
-        
         forwardLabel.text = "\(currentValue)"
+
+        brick = controlVC?.brick
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("forward", value: Float(currentValue))
+
     }
 
     @IBAction func liftSlider(_ sender: UISlider) {
         let yayValue = Int(Float(sender.value)*100)
-        
         liftLabel.text = "\(yayValue)"
 
     }
     
     @IBAction func backSlider(_ sender: UISlider) {
         let lolValue = Int(Float(sender.value)*100)
-        
         backLabel.text = "\(lolValue)"
+        
+        brick = controlVC?.brick
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("back", value: Float(lolValue))
 
     }
     

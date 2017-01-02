@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="er7-HP-gvV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="er7-HP-gvV">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -33,7 +33,7 @@
                                 <rect key="frame" x="47" y="147" width="675" height="378"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">          To link your iPad mini to your EV3, tap the Connect button. A list will pop up if your robot is not already connected. Only bricks that are on show up on the list, and make sure you pick the right one. Once your robot name shows up, tap on it and wait for it to connect. After it is connected, make the robot go the the program called  "Remote Control." Most of of the buttons are pretty straightforward. Some more confusing ones: the L Forward button makes the robot curve a little left while driving, while the R Forward button makes the robot curve a little right while driving. All of the buttons that are not "Step -" buttons are continuous, so make sure you press the Stop button before you break your robot. The same goes for Lift and Put Down, except you have to press Lift Stop. If you want to move a teeny bit, press a Step button. For example, if you want to turn a teeny bit to the left, press "Step Left." The Step Down button slightly lowers the arms. To finish the program (this will disable the buttons), press Finish.</mutableString>
+                                <string key="text">          To link your iPad mini to your EV3, tap the Connect button. A list will pop up if your robot is not already connected. Only bricks that are on show up on the list, and make sure you pick the right one. Once your robot name shows up, tap on it and wait for it to connect. After it is connected, make the robot go the the program called  "Remote Control." Most of of the buttons are pretty straightforward. Some more confusing ones: the L Forward button makes the robot curve a little left while driving, while the R Forward button makes the robot curve a little right while driving. All of the buttons that are not "Step -" buttons are continuous, so make sure you press the Stop button before you break your robot. The same goes for Lift and Put Down, except you have to press Lift Stop. If you want to move a teeny bit, press a Step button. For example, if you want to turn a teeny bit to the left, press "Step Left." The Step Down button slightly lowers the arms. To finish the program (this will disable the buttons), press Finish.</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -78,7 +78,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zAG-e5-uJj">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAG-e5-uJj">
                                 <rect key="frame" x="100" y="878" width="245" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.1497136919" green="0.63024057160000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -86,7 +86,7 @@
                                     <action selector="backSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="9ZN-Dd-J4F"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nUu-gd-mK8">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUu-gd-mK8">
                                 <rect key="frame" x="100" y="716" width="245" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.1497136919" green="0.63024057160000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -94,7 +94,7 @@
                                     <action selector="forwardSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="DKc-q5-Ymj"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lfb-ts-mfU">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfb-ts-mfU">
                                 <rect key="frame" x="494" y="878" width="245" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.1497136919" green="0.63024057160000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,7 +102,7 @@
                                     <action selector="tailSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="ak3-2W-H1m"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yhs-Is-2o8">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhs-Is-2o8">
                                 <rect key="frame" x="494" y="716" width="245" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.14971369188701911" green="0.63024057157221747" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -144,7 +144,9 @@
                     <tabBarItem key="tabBarItem" title="Settings" image="Gear.png" selectedImage="Gear.png" id="KUk-cf-a8V"/>
                     <connections>
                         <outlet property="backLabel" destination="Yqv-EF-kcT" id="dZf-c2-vsL"/>
+                        <outlet property="backUISlider" destination="zAG-e5-uJj" id="QdF-V0-bXs"/>
                         <outlet property="forwardLabel" destination="gUI-mg-YTB" id="4ky-UM-VR0"/>
+                        <outlet property="forwardUISlider" destination="nUu-gd-mK8" id="Nih-Iy-Suh"/>
                         <outlet property="liftLabel" destination="8PF-Cg-Vup" id="UKx-6k-Xgn"/>
                         <outlet property="tailLabel" destination="fpO-0t-UeO" id="Dqr-cb-wSm"/>
                     </connections>
