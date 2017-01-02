@@ -36,13 +36,22 @@ class settingsViewController: UIViewController {
         // set slider label texts
         forwardLabel.text = "\(Int(defaultSpeed.forwardSpeed))"
         backLabel.text = "\(Int(defaultSpeed.backSpeed))"
+        tailLabel.text = "\(Int(defaultSpeed.tailSpeed))"
+        liftLabel.text = "\(Int(defaultSpeed.liftSpeed))"
+
+    }
+    
+    func getBrick() -> Ev3Brick? {
+        let barViewControllers = self.tabBarController?.viewControllers
+        let vc : controlViewController?  = barViewControllers![0] as? controlViewController
+        return vc?.brick
     }
     
     @IBAction func forwardSlider(_ sender: UISlider) {
         let currentValue = Int(Float(sender.value)*100)
         forwardLabel.text = "\(currentValue)"
 
-        brick = controlVC?.brick
+        brick = getBrick()
         if (brick == nil) {
             return
         }
@@ -54,6 +63,13 @@ class settingsViewController: UIViewController {
     @IBAction func liftSlider(_ sender: UISlider) {
         let yayValue = Int(Float(sender.value)*100)
         liftLabel.text = "\(yayValue)"
+        brick = getBrick()
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("lift", value: Float(yayValue))
+
 
     }
     
@@ -61,7 +77,7 @@ class settingsViewController: UIViewController {
         let lolValue = Int(Float(sender.value)*100)
         backLabel.text = "\(lolValue)"
         
-        brick = controlVC?.brick
+        brick = getBrick()
         if (brick == nil) {
             return
         }
@@ -74,6 +90,13 @@ class settingsViewController: UIViewController {
         let theValue = Int(Float(sender.value)*100)
         
         tailLabel.text = "\(theValue)"
+        brick = getBrick()
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("tail", value: Float(theValue))
+
 
     }
 }

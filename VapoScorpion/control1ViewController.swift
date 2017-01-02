@@ -60,7 +60,7 @@ class controlViewController: UIViewController {
             return
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
-        command.writeMailbox("control", value: "stop")
+        command.writeMailbox("stop", value: "stop")
     }
     @IBAction func sforwardButton(_ sender: Any) {
         if (brick == nil) {
@@ -240,6 +240,10 @@ class controlViewController: UIViewController {
             let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
             command.writeMailbox("forward", value: defaultSpeed.forwardSpeed)
             command.writeMailbox("back", value: defaultSpeed.backSpeed)
+            command.writeMailbox("tail", value: defaultSpeed.tailSpeed)
+            command.writeMailbox("lift", value: defaultSpeed.liftSpeed)
+
+
         }
     }
 
