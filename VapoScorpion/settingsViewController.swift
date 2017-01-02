@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import ExternalAccessory
 
 class settingsViewController: UIViewController {
+    var connection: Ev3Connection? = nil
+    var brick: Ev3Brick? = nil
+    var connectedEV3 : EAAccessory? = nil
+    var controlVC : controlViewController? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let barViewControllers = self.tabBarController?.viewControllers
+        controlVC = barViewControllers![0] as? controlViewController
+        brick = controlVC?.brick
+        connectedEV3 = controlVC?.connectedEV3
+        connection = controlVC?.connection
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,6 +41,12 @@ class settingsViewController: UIViewController {
         let currentValue = Int(Float(sender.value)*100)
         
         forwardLabel.text = "\(currentValue)"
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("forward", value: Float(currentValue))
+
     }
 
     @IBAction func liftSlider(_ sender: UISlider) {
