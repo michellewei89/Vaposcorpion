@@ -582,6 +582,6 @@
     <resources>
         <image name="Gear.png" width="25" height="25"/>
         <image name="Icon1.png" width="25" height="25"/>
-        <image name="kwestionnemahrrktingy.png" width="26" height="26"/>
+        <image name="kwestionnemahrrktingy.png" width="25" height="25"/>
     </resources>
 </document>
