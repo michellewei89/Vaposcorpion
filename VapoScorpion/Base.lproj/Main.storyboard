@@ -148,7 +148,9 @@
                         <outlet property="forwardLabel" destination="gUI-mg-YTB" id="4ky-UM-VR0"/>
                         <outlet property="forwardUISlider" destination="nUu-gd-mK8" id="Nih-Iy-Suh"/>
                         <outlet property="liftLabel" destination="8PF-Cg-Vup" id="UKx-6k-Xgn"/>
+                        <outlet property="liftUISlider" destination="Yhs-Is-2o8" id="SLI-tK-uEH"/>
                         <outlet property="tailLabel" destination="fpO-0t-UeO" id="Dqr-cb-wSm"/>
+                        <outlet property="tailUISlider" destination="lfb-ts-mfU" id="PYM-hy-DXB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

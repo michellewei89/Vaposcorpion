@@ -24,6 +24,11 @@ class settingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        resendSliderValues()
+    }
+    
     @IBOutlet weak var forwardLabel: UILabel!
     @IBOutlet weak var liftLabel: UILabel!
     @IBOutlet weak var backLabel: UILabel!
@@ -31,6 +36,8 @@ class settingsViewController: UIViewController {
     
     @IBOutlet weak var forwardUISlider: UISlider!
     @IBOutlet weak var backUISlider: UISlider!
+    @IBOutlet weak var tailUISlider: UISlider!
+    @IBOutlet weak var liftUISlider: UISlider!
     
     func setSliderDefault() {
         // set slider label texts
@@ -39,6 +46,18 @@ class settingsViewController: UIViewController {
         tailLabel.text = "\(Int(defaultSpeed.tailSpeed))"
         liftLabel.text = "\(Int(defaultSpeed.liftSpeed))"
 
+    }
+    
+    func resendSliderValues() {
+        brick = getBrick()
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("forward", value: Float32(Int(100*forwardUISlider.value)))
+        command.writeMailbox("back", value: Float32(Int(100*backUISlider.value)))
+        command.writeMailbox("lift", value: Float32(Int(100*liftUISlider.value)))
+        command.writeMailbox("tail", value: Float32(Int(100*tailUISlider.value)))
     }
     
     func getBrick() -> Ev3Brick? {
