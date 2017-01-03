@@ -237,13 +237,17 @@ class controlViewController: UIViewController {
     func setDefaultSpeed() {
         //send default speed to EV3
         if (brick != nil) {
-            let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
-            command.writeMailbox("forward", value: defaultSpeed.forwardSpeed)
-            command.writeMailbox("back", value: defaultSpeed.backSpeed)
-            command.writeMailbox("tail", value: defaultSpeed.tailSpeed)
-            command.writeMailbox("lift", value: defaultSpeed.liftSpeed)
-
-
+            let barViewControllers = self.tabBarController?.viewControllers
+            let vc : settingsViewController?  = barViewControllers![1] as? settingsViewController
+            if vc != nil && vc!.hasSliderValues {
+                vc!.resendSliderValues()
+            } else {
+                let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+                command.writeMailbox("forward", value: defaultSpeed.forwardSpeed)
+                command.writeMailbox("back", value: defaultSpeed.backSpeed)
+                command.writeMailbox("tail", value: defaultSpeed.tailSpeed)
+                command.writeMailbox("lift", value: defaultSpeed.liftSpeed)
+            }
         }
     }
 
