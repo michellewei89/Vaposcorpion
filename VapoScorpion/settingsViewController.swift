@@ -12,6 +12,7 @@ import ExternalAccessory
 class settingsViewController: UIViewController {
     var brick: Ev3Brick? = nil
     var controlVC : controlViewController? = nil
+    public var hasSliderValues : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class settingsViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        resendSliderValues()
+        // resendSliderValues()
     }
     
     @IBOutlet weak var forwardLabel: UILabel!
@@ -45,10 +46,10 @@ class settingsViewController: UIViewController {
         backLabel.text = "\(Int(defaultSpeed.backSpeed))"
         tailLabel.text = "\(Int(defaultSpeed.tailSpeed))"
         liftLabel.text = "\(Int(defaultSpeed.liftSpeed))"
-
+        hasSliderValues = true
     }
     
-    func resendSliderValues() {
+    public func resendSliderValues() {
         brick = getBrick()
         if (brick == nil) {
             return
