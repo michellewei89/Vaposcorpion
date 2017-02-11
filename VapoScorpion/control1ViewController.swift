@@ -26,6 +26,13 @@ class controlViewController: UIViewController {
             EAAccessoryManager.shared().showBluetoothAccessoryPicker(withNameFilter: nil, completion: complete)
         }
     }
+    @IBAction func startButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "start")
+    }
     @IBAction func forwardButton(_ sender: Any) {
         if (brick == nil) {
             return
