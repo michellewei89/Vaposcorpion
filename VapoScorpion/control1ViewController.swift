@@ -27,7 +27,7 @@ class controlViewController: UIViewController {
         }
     }
     @IBAction func startButton(_ sender: Any) {
-        if (brick == nil) {
+        if (brick == nil ) {
             return
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
