@@ -32,6 +32,8 @@ class controlViewController: UIViewController {
         let buttonLabel = (startButton.titleLabel?.text)!
        
         switch buttonLabel {
+        case "Set Up":
+            startButton.setTitle("Start", for: .normal)
         case "Start":
             startButton.setTitle("Step 2", for: .normal)
         case "Step 2":
@@ -43,7 +45,7 @@ class controlViewController: UIViewController {
         case "Step 5":
             startButton.setTitle("Step 6", for: .normal)
         case "Step 6":
-            startButton.setTitle("Start", for: .normal)
+            startButton.setTitle("Set up", for: .normal)
         default:
             break
     
@@ -64,6 +66,18 @@ class controlViewController: UIViewController {
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
         command.writeMailbox("control", value: "forward")
     }
+    
+    
+    @IBAction func slowFowardButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        
+        let command: Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "slowforward")
+
+    }
+    
     @IBAction func backButton(_ sender: Any) {
         if (brick == nil) {
             return
@@ -204,7 +218,7 @@ class controlViewController: UIViewController {
             return
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
-        command.writeMailbox("control", value: "finish")
+        command.writeMailbox("stop", value: "finish")
     }
     
     func getEv3Accessory() -> EAAccessory? {
