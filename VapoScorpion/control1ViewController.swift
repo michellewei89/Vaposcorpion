@@ -26,12 +26,36 @@ class controlViewController: UIViewController {
             EAAccessoryManager.shared().showBluetoothAccessoryPicker(withNameFilter: nil, completion: complete)
         }
     }
+    @IBOutlet weak var startButton: UIButton!
+   
     @IBAction func startButton(_ sender: Any) {
+        let buttonLabel = (startButton.titleLabel?.text)!
+       
+        switch buttonLabel {
+        case "Start":
+            startButton.setTitle("Step 2", for: .normal)
+        case "Step 2":
+            startButton.setTitle("Step 3", for: .normal)
+        case "Step 3":
+            startButton.setTitle("Step 4", for: .normal)
+        case "Step 4":
+            startButton.setTitle("Step 5", for: .normal)
+        case "Step 5":
+            startButton.setTitle("Step 6", for: .normal)
+        case "Step 6":
+            startButton.setTitle("Start", for: .normal)
+        default:
+            break
+    
+        }
+        
+        
+        
         if (brick == nil ) {
             return
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
-        command.writeMailbox("control", value: "start")
+        command.writeMailbox("control", value: buttonLabel)
     }
     @IBAction func forwardButton(_ sender: Any) {
         if (brick == nil) {
