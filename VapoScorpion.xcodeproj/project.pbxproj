@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		575FDED61E0F4DFF00AB05A2 /* Icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 575FDED41E0F4DFF00AB05A2 /* Icon1.png */; };
 		575FDED71E0F4DFF00AB05A2 /* Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 575FDED51E0F4DFF00AB05A2 /* Gear.png */; };
+		579827721E1B426100F57084 /* kwestionnemahrrktingy.png in Resources */ = {isa = PBXBuildFile; fileRef = 579827711E1B426100F57084 /* kwestionnemahrrktingy.png */; };
 		842A54201E0B59FA00E906D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A541F1E0B59FA00E906D5 /* AppDelegate.swift */; };
 		842A54221E0B59FA00E906D5 /* control1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A54211E0B59FA00E906D5 /* control1ViewController.swift */; };
 		842A54251E0B59FA00E906D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842A54231E0B59FA00E906D5 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		575FDED41E0F4DFF00AB05A2 /* Icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon1.png; path = VapoScorpion/Assets.xcassets/Icon1.png; sourceTree = "<group>"; };
 		575FDED51E0F4DFF00AB05A2 /* Gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gear.png; path = VapoScorpion/Assets.xcassets/Gear.png; sourceTree = "<group>"; };
+		579827711E1B426100F57084 /* kwestionnemahrrktingy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kwestionnemahrrktingy.png; path = VapoScorpion/Assets.xcassets/kwestionnemahrrktingy.png; sourceTree = "<group>"; };
 		842A541C1E0B59FA00E906D5 /* VapoScorpion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VapoScorpion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A541F1E0B59FA00E906D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842A54211E0B59FA00E906D5 /* control1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = control1ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		842A54131E0B59FA00E906D5 = {
 			isa = PBXGroup;
 			children = (
+				579827711E1B426100F57084 /* kwestionnemahrrktingy.png */,
 				575FDED41E0F4DFF00AB05A2 /* Icon1.png */,
 				575FDED51E0F4DFF00AB05A2 /* Gear.png */,
 				F9C01FB91E0E201C00093FFE /* Ev3SystemCommand.swift */,
@@ -250,7 +253,7 @@
 				TargetAttributes = {
 					842A541B1E0B59FA00E906D5 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 9WSQWWT42Y;
+						DevelopmentTeam = 78MS8RXQ5F;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -300,6 +303,7 @@
 				575FDED71E0F4DFF00AB05A2 /* Gear.png in Resources */,
 				575FDED61E0F4DFF00AB05A2 /* Icon1.png in Resources */,
 				842A54251E0B59FA00E906D5 /* Main.storyboard in Resources */,
+				579827721E1B426100F57084 /* kwestionnemahrrktingy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,8 +498,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9WSQWWT42Y;
+				DEVELOPMENT_TEAM = 78MS8RXQ5F;
 				INFOPLIST_FILE = VapoScorpion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.monsieurprotist.vaposcopion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,8 +512,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9WSQWWT42Y;
+				DEVELOPMENT_TEAM = 78MS8RXQ5F;
 				INFOPLIST_FILE = VapoScorpion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.monsieurprotist.vaposcopion;
 				PRODUCT_NAME = "$(TARGET_NAME)";

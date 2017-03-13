@@ -3,7 +3,7 @@
 //  VapoScorpion
 //
 //  Created by Michelle Wei on 12/21/16.
-//  Copyright © 2016 Michelle Wei. All rights reserved.
+//  Copyright © 2016 Nicholas Wei. All rights reserved.
 //
 
 import UIKit
@@ -26,6 +26,42 @@ class controlViewController: UIViewController {
             EAAccessoryManager.shared().showBluetoothAccessoryPicker(withNameFilter: nil, completion: complete)
         }
     }
+    @IBOutlet weak var startButton: UIButton!
+   
+    @IBAction func startButton(_ sender: Any) {
+        let buttonLabel = (startButton.titleLabel?.text)!
+       
+        switch buttonLabel {
+        case "Set Up":
+            startButton.setTitle("Start", for: .normal)
+            startButton.backgroundColor = UIColor(red: 0/255.0, green: 201/255.0, blue: 33/255.0, alpha: 1)
+        case "Start":
+            startButton.setTitle("Step 2", for: .normal)
+            
+        case "Step 2":
+            startButton.setTitle("Step 3", for: .normal)
+        case "Step 3":
+            startButton.setTitle("Step 4", for: .normal)
+        case "Step 4":
+            startButton.setTitle("Step 5", for: .normal)
+        case "Step 5":
+            startButton.setTitle("Step 6", for: .normal)
+        case "Step 6":
+            startButton.setTitle("Set Up", for: .normal)
+            startButton.backgroundColor = UIColor(red: 180/255.0, green: 130/255.0, blue: 112/255.0, alpha: 1)
+        default:
+            break
+    
+        }
+        
+        
+        
+        if (brick == nil ) {
+            return
+        }
+        let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: buttonLabel)
+    }
     @IBAction func forwardButton(_ sender: Any) {
         if (brick == nil) {
             return
@@ -33,6 +69,18 @@ class controlViewController: UIViewController {
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
         command.writeMailbox("control", value: "forward")
     }
+    
+    
+    @IBAction func slowFowardButton(_ sender: Any) {
+        if (brick == nil) {
+            return
+        }
+        
+        let command: Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+        command.writeMailbox("control", value: "slowforward")
+
+    }
+    
     @IBAction func backButton(_ sender: Any) {
         if (brick == nil) {
             return
@@ -60,7 +108,7 @@ class controlViewController: UIViewController {
             return
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
-        command.writeMailbox("control", value: "stop")
+        command.writeMailbox("stop", value: "stop")
     }
     @IBAction func sforwardButton(_ sender: Any) {
         if (brick == nil) {
@@ -173,7 +221,7 @@ class controlViewController: UIViewController {
             return
         }
         let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
-        command.writeMailbox("control", value: "finish")
+        command.writeMailbox("stop", value: "finish")
     }
     
     func getEv3Accessory() -> EAAccessory? {
@@ -237,9 +285,17 @@ class controlViewController: UIViewController {
     func setDefaultSpeed() {
         //send default speed to EV3
         if (brick != nil) {
-            let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
-            command.writeMailbox("forward", value: defaultSpeed.forwardSpeed)
-            command.writeMailbox("back", value: defaultSpeed.backSpeed)
+            let barViewControllers = self.tabBarController?.viewControllers
+            let vc : settingsViewController?  = barViewControllers![1] as? settingsViewController
+            if vc != nil && vc!.hasSliderValues {
+                vc!.resendSliderValues()
+            } else {
+                let command : Ev3SystemCommand = Ev3SystemCommand(brick : brick!)
+                command.writeMailbox("forward", value: defaultSpeed.forwardSpeed)
+                command.writeMailbox("back", value: defaultSpeed.backSpeed)
+                command.writeMailbox("tail", value: defaultSpeed.tailSpeed)
+                command.writeMailbox("lift", value: defaultSpeed.liftSpeed)
+            }
         }
     }
 
