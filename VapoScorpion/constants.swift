@@ -10,7 +10,7 @@ import Foundation
 
 struct defaultSpeed
 {
-    static let forwardSpeed : Float32 = 10.0
+    static let forwardSpeed : Float32 = 15.0
     static let backSpeed : Float32 = 10.0
     static let  liftSpeed : Float32 = 15.0
     static let tailSpeed : Float32 = 15.0

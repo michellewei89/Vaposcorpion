@@ -3,7 +3,7 @@
 //  VapoScorpion
 //
 //  Created by Michelle Wei on 12/21/16.
-//  Copyright © 2016 Michelle Wei. All rights reserved.
+//  Copyright © 2016 Nicholas Wei. All rights reserved.
 //
 
 import UIKit
@@ -34,8 +34,10 @@ class controlViewController: UIViewController {
         switch buttonLabel {
         case "Set Up":
             startButton.setTitle("Start", for: .normal)
+            startButton.backgroundColor = UIColor(red: 0/255.0, green: 201/255.0, blue: 33/255.0, alpha: 1)
         case "Start":
             startButton.setTitle("Step 2", for: .normal)
+            
         case "Step 2":
             startButton.setTitle("Step 3", for: .normal)
         case "Step 3":
@@ -45,7 +47,8 @@ class controlViewController: UIViewController {
         case "Step 5":
             startButton.setTitle("Step 6", for: .normal)
         case "Step 6":
-            startButton.setTitle("Set up", for: .normal)
+            startButton.setTitle("Set Up", for: .normal)
+            startButton.backgroundColor = UIColor(red: 180/255.0, green: 130/255.0, blue: 112/255.0, alpha: 1)
         default:
             break
     
