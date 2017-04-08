@@ -45,9 +45,8 @@ class controlViewController: UIViewController {
         case "Step 4":
             startButton.setTitle("Step 5", for: .normal)
         case "Step 5":
-            startButton.setTitle("Step 6", for: .normal)
-        case "Step 6":
             startButton.setTitle("Set Up", for: .normal)
+        
             startButton.backgroundColor = UIColor(red: 180/255.0, green: 130/255.0, blue: 112/255.0, alpha: 1)
         default:
             break
