@@ -33,8 +33,10 @@ class controlViewController: UIViewController {
        
         switch buttonLabel {
         case "Set Up":
-            startButton.setTitle("Start", for: .normal)
+            startButton.setTitle("Run", for: .normal)
             startButton.backgroundColor = UIColor(red: 0/255.0, green: 201/255.0, blue: 33/255.0, alpha: 1)
+        case "Run":
+            startButton.setTitle("Start", for: .normal)
         case "Start":
             startButton.setTitle("Step 2", for: .normal)
             
